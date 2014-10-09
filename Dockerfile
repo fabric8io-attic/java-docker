@@ -6,5 +6,5 @@ ENV CLASSPATH /maven/*:/maven
 
 RUN mkdir /maven
 
-CMD java -cp $CLASSPATH $JAVA_OPTIONS $MAIN
+CMD java $JAVA_OPTIONS -cp $CLASSPATH $MAIN $ARGUMENTS
 
