@@ -1,4 +1,4 @@
-FROM consol/java-jolokia
+FROM jolokia/java-jolokia
 
 MAINTAINER fabric8@googlegroups.com
 
@@ -10,5 +10,7 @@ ENV JAVA_OPTIONS -javaagent:/opt/jolokia/jolokia.jar=host=0.0.0.0,port=8778,agen
 
 EXPOSE 8778
 
-CMD java $JAVA_OPTIONS -cp $CLASSPATH $MAIN $ARGUMENTS
+run mkdir /fabric8
+ADD run.sh /fabric8/
+CMD /fabric8/run.sh
 
