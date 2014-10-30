@@ -10,10 +10,13 @@ Just copy whatever jars you want to into the **/maven** folder.
 
 ### Environment variables:
 
-Se the following environment variables:
+Set the following environment variables:
 
 * **MAIN** to the Java main class to run
+* **JAR** to fat jar to run
 * **ARGUMENTS** for any command line arguments to pass into the java process.
+
+You should use either **JAR** or **MAIN** variables, not both at the same time.
 
 ### Building the docker container locally
 
