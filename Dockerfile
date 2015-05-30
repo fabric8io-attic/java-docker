@@ -10,5 +10,5 @@ EXPOSE 8778
 
 run mkdir /fabric8
 ADD run.sh /fabric8/
-CMD ["/fabric8/run.sh"]
+CMD [ "/fabric8/run.sh" ]
 
